@@ -13,9 +13,9 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 >***In this section, you’ll use Python and SQLAlchemy to do a basic climate analysis and data exploration of your climate database. Specifically, you’ll use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:***
 
-1. Note that you’ll use the provided files ( **`climate_starter.ipynb`**  and  **`hawaii.sqlite`** ) to complete your climate analysis and data exploration.
+1. Note that you’ll use the provided files (**`climate_starter.ipynb`**  and  **`hawaii.sqlite`**) to complete your climate analysis and data exploration.
 2. Use the SQLAlchemy **`create_engine()`** function to connect to your SQLite database.
-3. Use the SQLAlchemy **`automap_base()`** function to reflect your tables into classes, and then save references to the classes named **`station`** and **`measurement.`**
+3. Use the SQLAlchemy **`automap_base()`** function to reflect your tables into classes, and then save references to the classes named **`station`** and **`measurement`**
 4. Link Python to the database by creating a SQLAlchemy session.
 5. Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
 
@@ -55,14 +55,17 @@ To do so, complete the following steps:
    - List the stations and observation counts in descending order.
     - Answer the following question: which station id has the greatest number of observations?
 
-<sub>HINT: You’ll need to use the func.count function in your query.</sub>
+<sub>HINT: You’ll need to use the **`func.count`** function in your query.</sub>
 
 3. Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
-4. Design a query to get the previous 12 months of temperature observation (TOBS) data. To do so, complete the following steps:
+
+<sub>HINT: You’ll need to use functions such as **`func.min`**, **`func.max`**, and **`func.avg`** in your query.</sub>
+
+5. Design a query to get the previous 12 months of temperature observation (TOBS) data. To do so, complete the following steps:
    - Filter by the station that has the greatest number of observations.
     - Query the previous 12 months of TOBS data for that station.
      - Plot the results as a histogram with **`bins = 12`**
-5. Close your session.
+6. Close your session.
 
 
 ![https://static.bc-edx.com/data/dl-1-2/m10/lms/img/station-histogram.jpg![image]](https://user-images.githubusercontent.com/124745795/233767015-d33b19eb-44e3-4ce2-8daf-a0bf0038eed8.png)
