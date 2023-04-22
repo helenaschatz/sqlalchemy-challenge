@@ -8,6 +8,7 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 
 
+
                                   Part 1: Analyze and Explore the Climate Data
 
 >***In this section, you’ll use Python and SQLAlchemy to do a basic climate analysis and data exploration of your climate database. Specifically, you’ll use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:***
@@ -94,7 +95,7 @@ To do so, complete the following steps:
  
  
  
- 
+
  **Hints**
 
 *- Join the station and measurement tables for some of the queries.*
